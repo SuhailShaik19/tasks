@@ -1,6 +1,6 @@
 module.exports = {
   up: (queryInterface, Sequelize) => {
-    return queryInterface.bulkInsert('Task1', [
+    return queryInterface.bulkInsert('Tasks', [
       {
         tasktName: 'Chandu',
         status: 'pending',
@@ -18,6 +18,6 @@ module.exports = {
     ]);
   },
   down: (queryInterface, Sequelize) => {
-    return queryInterface.bulkDelete('Task1', null, {});
+    return queryInterface.bulkDelete('Tasks', null, {});
   },
 };
